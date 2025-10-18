@@ -1,0 +1,37 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI';
+  background: #000;
+}
+a {
+ text-decoration: none;
+ color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+nav a {
+  font-weight: 600;
+  color: white;
+  font-size: 1.2rem;
+}
+nav a:hover {
+  color: #ccc;
+}
+#nav-btn {
+  background-color: white;
+  color: black;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+#nav-btn:hover {
+  background-color: #ddd;
+}
