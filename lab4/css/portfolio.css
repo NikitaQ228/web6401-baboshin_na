@@ -1,0 +1,51 @@
+:root {
+    --color-text: #ffffff;
+    --color-link: #007acc;
+    --color-link-hover: #007acc;
+    --color-border-transparent: transparent;
+    --color-border-link: #007acc;
+}
+
+body, html {
+    padding: 10px 30px;
+    color: var(--color-text);
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2.2rem;
+}
+p {
+    font-size: 1.2rem;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.project-description ul {
+    font-size: 1.1rem;
+}
+.repo-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-link);
+    border-bottom: 2px solid var(--color-border-transparent);
+}
+.repo-link:hover {
+    border-color: var(--color-border-link);
+}
+.project-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video {
+    width: 800px;
+    height: auto;
+}

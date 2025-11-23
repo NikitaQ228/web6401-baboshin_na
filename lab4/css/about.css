@@ -1,0 +1,105 @@
+:root {
+  --color-text: #ffffff;
+  --color-border: #444444;
+  --сolor-skills-cards: #232c38;
+}
+
+body, html {
+  padding: 10px 30px;
+  color: var(--color-text);
+}
+
+h1 {
+  --gradient-color1: #ff6c00;
+  --gradient-color2: #ff00da;
+  --gradient-color3: #00cfff;
+  --gradient-color4: #32ff7e;
+  --gradient-color5: #ffeb3b;
+  --gradient-color6: #ff6c00;
+  background-clip: text;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(
+      90deg, 
+      var(--gradient-color1), 
+      var(--gradient-color2), 
+      var(--gradient-color3), 
+      var(--gradient-color4), 
+      var(--gradient-color5), 
+      var(--gradient-color6)
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: Arial;
+  font-size: 1.25rem;
+}
+
+th, td {
+  border: 1px solid var(--color-border);
+  padding: 10px;
+}
+
+th {
+  font-weight: 1000;
+}
+
+td:nth-child(1), th:nth-child(1) {
+  text-align: left;
+}
+
+td:nth-child(2), th:nth-child(2) {
+  text-align: center;
+}
+
+td:nth-child(3), th:nth-child(3) {
+  text-align: right;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.skill-card {
+  background:var(--сolor-skills-cards);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 18px;
+  color: var(--color-text);
+  text-align: center;
+  font-size: 1.2rem;
+}
