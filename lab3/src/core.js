@@ -137,10 +137,6 @@ function deepEqual(firstObject, secondObject) {
         return true;
     }
 
-    if (typeof firstObject === 'function' && typeof secondObject === 'function') {
-        return firstObject === secondObject;
-    }
-
     if (typeof firstObject !== 'object' || firstObject === null || 
         typeof secondObject !== 'object' || secondObject === null) {
             return false;
