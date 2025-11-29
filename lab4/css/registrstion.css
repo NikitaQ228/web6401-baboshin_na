@@ -6,102 +6,68 @@
   --btn-white: #fff;
   --btn-black: #000;
   --btn-hover: #ddd;
+  --input-border: #444;
 }
 
 body, html {
   padding: 10px 30px;
-  overflow: hidden;
 }
 
 .reg-form {
   background: var(--background-dark);
-  border-radius: 14px;
-  padding: 32px 28px;
+  border-radius: 4px;
+  padding: 20px;
   width: 100%;
   max-width: 360px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
-  position: relative;
-  overflow: hidden;
-  animation: appear 1s cubic-bezier(.68,-0.55,.27,1.55);
-  margin: 48px auto;
-  color: var(--text-white, #fff);
+  margin: 40px auto;
+  color: var(--text-white);
 }
-@keyframes appear {
-  0% { transform: scale(0.8) translateY(70px); opacity: 0; }
-  70% { transform: scale(1.05) translateY(-8px); opacity: .9;}
-  100% {transform: scale(1) translateY(0); opacity: 1;}
-}
+
 .reg-form h2 {
-  margin: 0 0 20px 0;
+  margin: 0 0 16px;
   color: var(--text-white);
   text-align: center;
-  letter-spacing: 1px;
   font-weight: 700;
 }
+
 .form-field {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   display: flex;
   flex-direction: column;
 }
+
 .form-field label {
   color: var(--text-grey);
-  font-size: 15px;
-  margin-bottom: 6px;
-  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
 }
+
 .form-field input[type="text"],
 .form-field input[type="email"],
 .form-field input[type="password"] {
-  padding: 10px 11px;
-  border-radius: 7px;
-  border: none;
-  outline: none;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--input-border);
   background: var(--background-black);
-  color: var(--text-white, #fff);
-  font-size: 15px;
-  transition: box-shadow 0.15s;
+  color: var(--text-white);
+  font-size: 14px;
 }
-.form-field input:focus {
-  box-shadow: 0 0 0 2px var(--btn-hover);
-}
+
 .gender-radio {
   display: flex;
-  gap: 24px;
-  margin-top: 2px;
-  font-size: 15px;
+  gap: 16px;
+  margin-top: 4px;
+  font-size: 14px;
   color: var(--text-grey);
 }
-.form-field input[type="radio"] {
-  accent-color: var(--btn-black);
-}
-.agreement {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  color: var(--text-grey, #ccc);
-  gap: 8px;
-  flex-direction: row;
-}
-.agreement input[type="checkbox"] {
-  accent-color: var(--btn-black);
-  margin-right: 0;
-  margin-left: 0;
-}
+
 .btn-submit {
   width: 100%;
-  padding: 11px 0;
+  padding: 9px 0;
   background-color: var(--btn-white);
   color: var(--btn-black);
-  font-weight: bold;
-  border: none;
-  border-radius: 7px;
-  font-size: 16px;
+  border: 1px solid var(--btn-white);
+  border-radius: 4px;
+  font-size: 15px;
   cursor: pointer;
-  letter-spacing: 1px;
-  transition: background 0.22s, color 0.22s, letter-spacing 0.23s;
-}
-.btn-submit:hover {
-  background-color: var(--btn-hover);
-  color: var(--btn-black);
-  letter-spacing: 2px;
 }

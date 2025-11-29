@@ -9,12 +9,11 @@
 .container {
   display: flex;
   height: 100vh;
-  position: relative;
   overflow: hidden;
 }
 
 .left-side {
-  flex: 1.1;
+  flex: 1;
   background: var(--color-left-bg);
   clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
   z-index: 1;

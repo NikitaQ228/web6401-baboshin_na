@@ -1,10 +1,9 @@
 class RegistrationData {
-  constructor(name, email, password, gender, agreement) {
+  constructor(name, email, password, gender) {
     this.name = name;
     this.email = email;
     this.password = password;
     this.gender = gender;
-    this.agreement = agreement;
   }
 
   printToConsole() {
@@ -13,7 +12,6 @@ class RegistrationData {
     console.log(`Email:     ${this.email}`);
     console.log(`Password:  ${this.password}`);
     console.log(`Gender:    ${this.gender}`);
-    console.log(`Agreement: ${this.agreement ? 'Agreed' : 'Not agreed'}`);
     console.log("----------------------------");
   }
 }
@@ -26,9 +24,8 @@ document.querySelector('.reg-form').addEventListener('submit', function(event) {
   const email = form.email.value.trim();
   const password = form.password.value;
   const gender = form.gender.value;
-  const agreement = form.agreement.checked;
 
-  const data = new RegistrationData(name, email, password, gender, agreement);
+  const data = new RegistrationData(name, email, password, gender);
 
   data.printToConsole();
 });
