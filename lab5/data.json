@@ -1,0 +1,32 @@
+{
+  "/register": {
+    "post": {
+      "data": {
+        "success": true,
+        "message": "Пользователь зарегистрирован",
+        "userId": 123
+      }
+    }
+  },
+  "/education": {
+    "get": {
+      "data": [
+        {
+          "institution": "Samara University",
+          "type": "University",
+          "years": "2022-2026"
+        },
+        {
+          "institution": "Samara International Aerospace Lyceum",
+          "type": "Lyceum",
+          "years": "2020-2022"
+        },
+        {
+          "institution": "School No. 122",
+          "type": "School",
+          "years": "2011-2020"
+        }
+      ]
+    }
+  }
+}
